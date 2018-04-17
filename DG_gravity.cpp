@@ -8,7 +8,7 @@ void segundo_orden( int a, double in, double in_d, double h);
 int main()
 {	
 	//Variable iniciales
-	double m=10, x_in=3, v_in=200, h=0.1;
+	double m=10, x_in=20, v_in=3, h=0.1;
 	//Funcion que calcula ecuaciones diferencial de segundo orden por Runge-Kutta
 	segundo_orden(0.0,x_in,v_in,h);
 	return 0;
@@ -37,9 +37,9 @@ void segundo_orden(int a, double in, double in_d, double h)
 	//Variable que simula el tiempo
 	double t=a;
 	//Variable que simula la velocidad
-	double v=in;
+	double v=in_d;
 	//Variable que simula la posicion
-	double y=in_d;
+	double y=in;
 	//Impresion de los valores inciales
 	cout << y << " " << v << " " << t << endl;
 	//
